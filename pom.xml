@@ -42,6 +42,7 @@
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
+            <version>4.0</version>
         </dependency>
 
     </dependencies>
@@ -49,13 +50,13 @@
         <plugins>
 
             <plugin>
-                <version>4.0</version>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
                 <configuration>
                     <url>jdbc:h2:tcp://localhost/~/testdb</url>
                     <user>sa</user>
                 </configuration>
+                <version>4.0</version>
             </plugin>
 
         </plugins>
